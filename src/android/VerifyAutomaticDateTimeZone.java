@@ -1,4 +1,4 @@
-package com.edsonhoraciojunior.verifyautomaticdatetimezone;
+package com.totvshublog.verifyautomaticdatetimezone;
 
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.CordovaInterface;
@@ -62,13 +62,12 @@ public class VerifyAutomaticDateTimeZone extends CordovaPlugin {
 
     private boolean isAutomaticChecked() throws Settings.SettingNotFoundException {
 
-        Integer dateTime, timezone;
+        Integer dateTime;
 
         Activity activity = this.cordova.getActivity();
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR1) {
             dateTime = Settings.Global.getInt(activity.getContentResolver(), Settings.Global.AUTO_TIME, 0);
-            timezone = Settings.Global.getInt(activity.getContentResolver(), Settings.Global.AUTO_TIME_ZONE, 0);
 
         } else {
             dateTime = android.provider.Settings.System.getInt(
@@ -77,14 +76,9 @@ public class VerifyAutomaticDateTimeZone extends CordovaPlugin {
                 0
             );
 
-            timezone = android.provider.Settings.System.getInt(
-                activity.getContentResolver(),
-                android.provider.Settings.System.AUTO_TIME,
-                0
-            );
         }
 
-        if (dateTime == 0 || timezone == 0) {
+        if (dateTime == 0) {
             return false;
         } else {
             return true;
