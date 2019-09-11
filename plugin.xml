@@ -39,12 +39,12 @@
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="VerifyAutomaticDateTimeZone" >
                 <!-- <param name="android-package" value="org.apache.cordova.device.Device"/> -->
-                <param name="android-package" value="com.edsonhoraciojunior.verifyautomaticdatetimezone.VerifyAutomaticDateTimeZone"/>
+                <param name="android-package" value="com.totvshublog.verifyautomaticdatetimezone.VerifyAutomaticDateTimeZone"/>
             </feature>
         </config-file>
 
         <!-- <source-file src="src/android/Device.java" target-dir="src/org/apache/cordova/device" /> -->
-        <source-file src="src/android/VerifyAutomaticDateTimeZone.java" target-dir="src/com/edsonhoraciojunior/verifyautomaticdatetimezone" />
+        <source-file src="src/android/VerifyAutomaticDateTimeZone.java" target-dir="src/com/totvshublog/verifyautomaticdatetimezone" />
     </platform>
 
     <!-- ios aguardando sucesso no android porenquanto
