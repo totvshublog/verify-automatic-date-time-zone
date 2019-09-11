@@ -1,6 +1,6 @@
 {
   "name": "verify-automatic-date-time-zone",
-  "version": "1.0.3-dev",
+  "version": "1.0.4-dev",
   "description": "Verify Automatic Date, Time and Timezone",
   "types": "./types/index.d.ts",
   "cordova": {
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/edsonhoraciojunior/verify-automatic-date-time-zone.git"
+    "url": "git+https://github.com/totvshublog/verify-automatic-date-time-zone.git"
   },
   "keywords": [
     "automatic",
@@ -24,9 +24,9 @@
   "author": "Edson Horácio Junior",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/edsonhoraciojunior/verify-automatic-date-time-zone/issues"
+    "url": "https://github.com/totvshublog/verify-automatic-date-time-zone/issues"
   },
-  "homepage": "https://github.com/edsonhoraciojunior/verify-automatic-date-time-zone#readme",
+  "homepage": "https://github.com/totvshublog/verify-automatic-date-time-zone#readme",
   "dependencies": {},
   "devDependencies": {}
 }
