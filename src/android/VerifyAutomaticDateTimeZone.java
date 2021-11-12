@@ -7,11 +7,11 @@ import org.apache.cordova.CallbackContext;
 import org.json.JSONArray;
 import org.json.JSONException;
 
-import android.app.Activity;
-import android.content.Context;
 import android.provider.Settings;
 import android.os.Build;
 import android.util.Log;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class VerifyAutomaticDateTimeZone extends CordovaPlugin {
     public static final String TAG = "VerifyAutomaticDateTimeZone";
@@ -64,7 +64,7 @@ public class VerifyAutomaticDateTimeZone extends CordovaPlugin {
 
         Integer dateTime;
 
-        Activity activity = this.cordova.getActivity();
+        AppCompatActivity activity = this.cordova.getActivity();
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR1) {
             dateTime = Settings.Global.getInt(activity.getContentResolver(), Settings.Global.AUTO_TIME, 0);
